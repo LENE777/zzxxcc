@@ -33,7 +33,7 @@
 <%
 String id = request.getParameter("id");
 String pass = request.getParameter("pw");
-String sessionID = "yes";
+String sessionID = request.getParameter("id");
 
 try{
 

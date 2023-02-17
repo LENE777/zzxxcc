@@ -26,7 +26,7 @@ indate = indate + Integer.toString(dateIn.get(Calendar.MINUTE)) + ":";
 indate = indate + Integer.toString(dateIn.get(Calendar.SECOND));
 	
 pstmt = conn.prepareStatement("update gm1 set id=?, pw=?, title=?, content=?, date=? where no=?");
-pstmt.setString(1, id);
+pstmt.setString(1, (String)session.getAttribute("id"));
 pstmt.setString(2, pw);
 pstmt.setString(3, title);
 pstmt.setString(4, content);

@@ -34,36 +34,36 @@ idsearch.submit();
  	</TR>
 </TABLE>
 
-<FORM Name='member_input' Method='post' Action='member_output.jsp'>
+<FORM Name='idsearch' Method='post' Action='id_ok.jsp'>
 
-<TABLE  border='2' cellSpacing=0 cellPadding=5 align=center>
+<TABLE bgcolor='282828' border='0' cellSpacing=0 cellPadding=5 align=center>
 <TR>
-	<TD bgcolor='000000' align='center'>
+	<TD align='center'>
 		<font color=ffffff size='2'>이 름</font>
 	</TD>
-	<TD bgcolor='000000'>
+	<TD >
 		<input type='text' maxLength='10' size='10' name='name'>
 	</TD>
 </TR>
 <TR>
-	<TD bgcolor='000000' align='center'>
+	<TD align='center'>
 		<font color=ffffff size='2'>전 화 번 호</font>
 	</TD>
-	<TD bgcolor='000000'>
+	<TD>
 		<input type='text' maxlength='20' size='20' name='phone'>
 	</TD>
 </TR>
 </TABLE>
-<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
 	<TR>
 		<TD><hr size='1' noshade>
 		</TD>
  	</TR>
 </TABLE>
-<TABLE>
+<TABLE bgcolor='282828'>
 <TR>
 	<TD colspan='2' align='center'>
-	<input type='button' onclick="location.href='member.jsp'" value='돌아가기'>
+		<input type='button' onclick="location.href='member.jsp'" value='돌아가기'>
 		<input type='button' OnClick='Check()' value='아이디 찾기'>
 	</TD>
 </TR>

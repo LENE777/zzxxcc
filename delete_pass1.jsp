@@ -38,8 +38,8 @@ String no = request.getParameter("no");
 			<font color='ffffff' size='2'><b>비밀번호</b></font>
 		</td>
 		<td align='center'>
-			<input type='password' name='pass' size=20 maxlength=20>
-			<input type='submit' value=' 확 인 ' style='background-color:cccccc; font-weight:bolder'>
+			<input type='password' name='pw' size=20 maxlength=20>
+			<input type='submit' value=' 확 인 ' >
 		</td>
 	</tr>
 </table>

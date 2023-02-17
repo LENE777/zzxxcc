@@ -7,9 +7,9 @@
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 <style type='text/css'>
 <!--
-	a:link		{font-family:"";color:blue;text-decoration:none;}
-	a:visited	{font-family:"";color:blue;text-decoration:none;}
-	a:hover		{font-family:"";color:blue;text-decoration:underline;}
+	a:link		{font-family:"";color:white;text-decoration:none;}
+	a:visited	{font-family:"";color:white;text-decoration:none;}
+	a:hover		{font-family:"";color:white;text-decoration:underline;}
 -->
 </style>
 </head>
@@ -22,7 +22,7 @@ String no = request.getParameter("no");
 
 <center><font size='3'><b>비밀번호 확인</b></font>
 
-<table border='0' width='600' cellpadding='0' cellspacing='0'>
+<table bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
 	<tr>
 		<td><hr size='1' noshade>
 		</td>
@@ -30,29 +30,31 @@ String no = request.getParameter("no");
 </table>
 
 <form Action='modify_input.jsp' Method='post'>
-<input type='hidden' name='num' value='<%=no %>'>
+<input type='hidden' name='no' value='<%=no %>'>
 
-<table border='0' width='300' align='center'>
+<table bgcolor='282828' border='0' width='600' align='center'>
 	<tr>
 		<td align='center'>
-			<font size=2><b>비밀번호</b></font>
-		</td>
-		<td>
-			<input type='password' name='pass' size=20 maxlength=20>
-			<input type='submit' value=' 확 인 ' style='background-color:cccccc; font-weight:bolder'>
+			<font color='ffffff' size=2><b>비밀번호</b></font>
+			<input type='password' name='pw' size=20 maxlength=20>
+			<input type='submit' value=' 확 인 ' >
 		</td>
 	</tr>
 </table>
 
-<table border='0' width='600' cellpadding='0' cellspacing='0'>
+<table bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
 	<tr>
 		<td><hr size='1' noshade>
 		</td>
 	</tr>
 </table>
-
+<table bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
+<tr>
+<td align='center'>
 <a href='listboard1.jsp'>[목록 보기]</a>
-
+</td>
+</tr>
+</table>
 </form>
 
 </body>

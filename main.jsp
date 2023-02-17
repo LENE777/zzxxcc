@@ -36,6 +36,15 @@ a:hover {
 
 <body>
 <center>
+<table bgcolor='282828'width='600'cellpadding=5 cellspacing=5>
+			<tr>
+				<td align=left>
+				<font size=4><a href='main.jsp'>HOME</a></font>
+				</td>
+				<td align=right>
+				<font size=3><a href='logout.jsp'>로그아웃</a></font>
+				</td>
+		</table>
 	<TABLE border='0' width='600' cellpadding='5' cellspacing='10'>
 		<tr>
 			<td bgcolor=282828 align=center>

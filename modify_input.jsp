@@ -14,9 +14,9 @@ Connection conn = DriverManager.getConnection(url,"root","1234");
 PreparedStatement pstmt = null;
 ResultSet rs = null;
 
-String strSQL = "SELECT pw FROM gm1 WHERE no = ?";
+String strSQL = "SELECT pw FROM gm1 WHERE no = "+no+"";
 pstmt = conn.prepareStatement(strSQL);
-pstmt.setInt(1, Integer.parseInt(no));
+//pstmt.setInt(1, Integer.parseInt(no));
 
 rs = pstmt.executeQuery();
 rs.next();

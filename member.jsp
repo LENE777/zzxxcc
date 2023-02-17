@@ -51,7 +51,7 @@ a:hover {
 	<center>
 		<font size='3'><b> 로 그 인 </b></font>
 
-		<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+		<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
 			<TR>
 				<TD><hr size='1' noshade></TD>
 			</TR>
@@ -60,24 +60,24 @@ a:hover {
 
 		<FORM Name='Member' Method='post' Action='member_ok.jsp'>
 
-			<TABLE align=center width='300' border='0' cellpadding='10'
+			<TABLE bgcolor='282828' align=center width='600' border='0' cellpadding='10'
 				cellspacing='0'>
 				<TR>
-					<TD bgcolor='282828' align='right'><font color=ffffff size='2'>ID :</font></TD>
-					<TD bgcolor='282828' align='center'><input type=text maxlength=10 size=10 name=id></TD>
-					<TD bgcolor='282828' align='left'><input onclick='Check()' type='button' value='로그인'></TD>
+					<TD align='right'><font color=ffffff size='4'>ID :</font></td>
+					<TD align='center'><input type=text maxlength=10 size=20 name=id></TD>
+					<TD align='left'><input onclick='Check()' type='button' style="width:100;height:40" value='로그인'></TD>
 				</TR>
 				<TR>
-					<TD bgcolor='282828' align='right'><font color=ffffff size='2'>비밀번호	: </TD>
-					<TD bgcolor='282828' align='center'><input type='password'	maxlength='10' size='10' name='pw'></TD>
-					<TD bgcolor='282828'><font size='2'> <a href="member_input.jsp">[회원가입]</a></font></TD>
+					<TD align='right'><font color=ffffff size='4'>비밀번호	: </TD>
+					<TD align='center'><input type='password'	maxlength='10' size='20' name='pw'></TD>
+					<TD><font size='3'> <a href="member_input.jsp">[회원가입]</a></font></TD>
 				</TR>
 
 
 			</TABLE>
-			<table align=center width=300 border=0 cellpadding=2 cellspacing=0>
+			<table bgcolor='282828' align=center width=600 border=0 cellpadding=2 cellspacing=5>
 				<tr>
-					<td bgcolor=282828 align=center>
+					<td align=center>
 						<font size=2>
 						<a href=idsearch.jsp>아이디 찾기</a>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

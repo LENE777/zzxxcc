@@ -37,7 +37,7 @@ if(pw.equals(goodpw)){
 	
 	response.sendRedirect("listboard1.jsp");
 } else {
-	response.sendRedirect("delete_pass.jsp?no=" + no);
+	response.sendRedirect("delete_pass1.jsp?no=" + no);
 }
 
 rs.close();

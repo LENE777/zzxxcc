@@ -10,9 +10,9 @@
 <title> 게시판 </title>
 <style type='text/css'>
 <!--
-	a:link		{font-family:"";color:blue;text-decoration:none;}
-	a:visited	{font-family:"";color:blue;text-decoration:none;}
-	a:hover		{font-family:"";color:blue;text-decoration:underline;}
+	a:link		{font-family:"";color:white;text-decoration:none;}
+	a:visited	{font-family:"";color:white;text-decoration:none;}
+	a:hover		{font-family:"";color:white;text-decoration:underline;}
 -->
 </style>
 
@@ -48,72 +48,75 @@ String date = rs.getString("date");
 int count = rs.getInt("count");
 %>
 
-<center><font size='3'><b> 게시판 </b></font>
-
-<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
-	<TR>
-		<TD><hr size='1' noshade>
-		</TD>
- 	</TR>
-</TABLE>
-
-<TABLE border='0' width='600'>
+<center>
+<table bgcolor='282828'width='600'cellpadding=5 cellspacing=5>
+			<tr>
+				<td align=left>
+				<font size=4><a href='main.jsp'>HOME</a></font>
+				</td>
+				<td align=right>
+				<font size=3><a href='logout.jsp'>로그아웃</a></font>
+				</td>
+		</table>
+<TABLE bgcolor='282828' border='0' width='600' cellpadding=3 cellspacing=3>
 	<TR>
     		<TD align='left'>
-      		<font size='2'> 작성자 : <%=id %></font>
+      		<font color='ffffff' size='2'>글번호: <%=no %> | 작성자 : <%=id %></font>
     		</TD>
     		
     		<TD align=right>
-      		<font size='2'>작성일: <%=date %>, 조회수: <%=count %></font>
+      		<font color='ffffff' size='2'>작성일: <%=date %> | 조회수: <%=count %></font>
     		</TD>
     	</TR>
 </TABLE>
-
-<TABLE border='0' cellspacing=3 cellpadding=3 width='600'>
-	<TR bgcolor='cccccc'>
-		<TD align='center'>
-    		<font size='3'><b><%=title %></font>
-		</TD>
-	</TR>
+<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
+  	<TR>
+  		<TD><hr size='1' noshade>
+  		</TD>
+  	</TR>
 </TABLE>
-
-<TABLE border='0' cellspacing=5 cellpadding=10 width='600'>
-	<TR bgcolor='ededed'>
-		<TD><font size='2' color=''><%=content %></font>
-		</TD>
-	</TR>
-</TABLE>
-
-<TABLE border='0' width='600'>
+<TABLE bgcolor='282828' border='0' cellspacing=0 cellpadding=0 width='600'>
 	<TR>
-    		<TD align='right'>
-		<font size='2'><br><font size='2'></font>
-    		</TD>
+		
+		<TD align='center'>
+    		<font color='ffffff' size='5'><b><%=title %></font>
+		</TD>
 	</TR>
 </TABLE>
-
-<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
+  	<TR>
+  		<TD><hr size='1' noshade>
+  		</TD>
+  	</TR>
+</TABLE>
+<TABLE bgcolor='282828' border='0' cellspacing=0 cellpadding=0 width='600' height=300 >
+	<TR>
+		<TD><font color='ffffff' size='2' color=''>&nbsp;&nbsp;<%= content %></font>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
   	<TR>
   		<TD><hr size='1' noshade>
   		</TD>
   	</TR>
 </TABLE>
 
-<TABLE border='0' width='600'>
+<TABLE bgcolor='282828' border='0' width='600'>
 	<TR>
 		<td align='left'>
-			<a href="modify_pass.jsp?num=<%=no %>">[수정하기]</a>
-			<a href="delete_pass.jsp?num=<%=no %>">[삭제하기]</a>
+			<a href="modify_pass.jsp?no=<%=no %>">[수정하기]</a>
+			<a href="delete_pass1.jsp?no=<%=no %>">[삭제하기]</a>
 		</td>
 		
 		<TD align='right'>
-			<a href='write.jsp'>[글쓰기]</a>
-			<a href='listboard.jsp'>[목록보기]</a>
+			<a href='write1.jsp'>[글쓰기]</a>
+			<a href='listboard1.jsp'>[목록보기]</a>
  		</TD>
 	</TR>
 </TABLE>
 <%
-strSQL = "UPDATE tblboard SET readcount=readcount+1 WHERE num = ?";
+strSQL = "UPDATE gm1 SET count=count+1 WHERE no = ?";
 pstmt = conn.prepareStatement(strSQL);
 pstmt.setInt(1, Integer.parseInt(no));
 pstmt.executeUpdate();
