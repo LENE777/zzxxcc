@@ -51,11 +51,6 @@
 		</table>
 		<table border=0 width=600 cellpadding=0 cellspacing=0>
 			<tr>
-				<td bgcolor='282828'><a href="main.jsp">HOME</a></td>
-			</tr>
-		</table>
-		<table border=0 width=600 cellpadding=0 cellspacing=0>
-			<tr>
 				<td align=center bgcolor='282828'><font color='ffffff' size='3'>게시판 글쓰기</font></td>
 			</tr>
 		</table>

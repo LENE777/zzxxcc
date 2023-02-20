@@ -10,7 +10,7 @@ request.setCharacterEncoding("UTF-8");
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>ㅎㅎ게시판</title>
+<title>ㅁㅁ게시판</title>
 <style type='text/css'>
 <!--
 a:link {
@@ -35,18 +35,28 @@ a:hover {
 </head>
 
 <body>
-<center>
-	<TABLE border='0' width='600' cellpadding='5' cellspacing='10'>
-		<tr>
-			<td bgcolor=282828 align=center>
-				<font size=5><a href=listboard1.jsp>게임1</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-				<font size=5><a href=listboard2.jsp>게임2</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-				<font size=5><a href=listboard3.jsp>게임3</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-				<font size=5><a href=listboard4.jsp>게임4</a></font>
-			</td>
-		</tr>
-	</TABLE>
-</center>
+	<center>
+		<table bgcolor='282828'width='600'cellpadding=5 cellspacing=5>
+			<tr>
+				<td align=left>
+				<font size=4><a href='main.jsp'>HOME</a></font>
+				</td>
+				<td align=right>
+				<font size=3><a href='logout.jsp'>로그아웃</a></font>
+				</td>
+		</table>
+	
+		<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+			<tr>
+				<td bgcolor=282828 align=center>
+				<font size=5><a href=listboard1.jsp>ㅁㅁ</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font size=5><a href=listboard2.jsp>ㄴㄴ</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font size=5><a href=listboard3.jsp>ㅇㅇ</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font size=5><a href=listboard4.jsp>ㄹㄹ</a></font>
+				</td>
+			</tr>
+		</TABLE>
+	</center>
 	<%
 	String pageno = request.getParameter("pageno");
 	if (pageno == null) {
@@ -79,82 +89,91 @@ a:hover {
 	%>
 
 	<center>
-		<font size='5'><b> ㅎㅎ게시판 </b></font>
-
-		<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+		<TABLE bgcolor='282828'  border='0' width='600' cellpadding='' cellspacing='0'>
 			<TR>
 				<TD><hr size='1' noshade></TD>
 			</TR>
 		</TABLE>
+		<table bgcolor=282828 width='600'cellpadding=3 cellspacing=3>
+			<tr>
+				<td align="center"><font color='ffffff' size='5'><b> ㄹㄹ게시판 </b></font>
+				</td>
+			</tr>
+		</table>
+		
+		<TABLE bgcolor='282828'  border='0' width='600' cellpadding='0' cellspacing='0'>
+			<TR>
+				<TD><hr size='1' noshade></TD>
+			</TR>
+		</TABLE>
+		<TABLE bgcolor='282828'  border=0 width=600 cellpadding=5 cellspacing=0>
+			<tr>
+				<td align=left></td>
+				<TD align='right'><a href='write4.jsp'>[등록] &nbsp; </a></TD>
+			</TR>
+		</TABLE>
+		<TABLE bgcolor='282828'  border='0' width='600' cellpadding='0' cellspacing='0'>
+			<TR>
+				<TD><hr size='1' noshade></TD>
+			</TR>
+		</TABLE>
+		<TABLE bgcolor='282828'  border='0' cellspacing=1 cellpadding=2 width='600'>
 
-		<TABLE border='0' cellspacing=1 cellpadding=2 width='600'>
-
-			<TR bgcolor='cccccc'>
-				<TD><font size=2><center>
+			<TR bgcolor='282828'>
+				<TD><font color='ffffff' size=2><center>
 							<b>번호</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>글 제목</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>작성자</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>작성일</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>조회</b>
 						</center></font></TD>
 			</TR>
-
+		
 			<%
 			if (lastRow > 0) {
-				strSQL = "select * from gm1 where no between " + startRow + " and " + endRow;
+				strSQL = "select * from gm4 where no between " + startRow + " and " + endRow;
 				rs = stmt.executeQuery(strSQL);
 
 				for (i = 0; i < listSize; i++) {
 					if (rs.next()) {
 
 				int listno = rs.getInt("no");
-				String name = rs.getString("name");
-				String email = rs.getString("email");
+				String id = rs.getString("id");
 				String title = rs.getString("title");
-				String writedate = rs.getString("writedate");
-				int readcount = rs.getInt("readcount");
+				String date = rs.getString("date");
+				int count = rs.getInt("count");
 			%>
 
 			<TR bgcolor='ededed'>
 				<TD align=center><font size=2 color='black'><%=listno%></font></TD>
-				<TD align=left><a href="write_output1.jsp?no=<%=listno%>">
-						<font size=2 color="black"><%=title%></font>
+				<TD align=left><a href="write_output4.jsp?no=<%=listno%>">
+				<font size=2 color="black"><%=title%></font>
 				</a></TD>
-				<TD align=center><a href="<%=email%>"> <font size=2
-						color="black"><%=name%></font></a></TD>
-				<TD align=center><font size=2><%=writedate%></font></TD>
-				<TD align=center><font size=2><%=readcount%></font></TD>
+				<TD align=center><font size=2 color="black"><%=id%></font></TD>
+				<TD align=center><font size=2><%=date%></font></TD>
+				<TD align=center><font size=2><%=count%></font></TD>
 			</TR>
-
+		
 			<%
 			}
 			}
 			%>
+</TABLE>
 
-		</TABLE>
-
-		<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+		<TABLE bgcolor='282828'  border='0' width='600' cellpadding='' cellspacing='0'>
 			<TR>
 				<TD><hr size='1' noshade></TD>
 			</TR>
 		</TABLE>
-
-		<TABLE border=0 width=600>
-			<TR>
-				<TD align=left></TD>
-
-				<TD align='right'><a href='write1.jsp'>[등록]</a></TD>
-			</TR>
-		</TABLE>
-
+		
 		<%
 		rs.close();
 		stmt.close();
@@ -171,23 +190,23 @@ a:hover {
 
 		if (currentPage > 1) {
 		%>
-		<a href="listboard1.jsp?pageno=<%=currentPage - 1%>">[이전]</a>
+		<a href="listboard4.jsp?pageno=<%=currentPage - 1%>">[이전]</a>
 		<%
 		}
 		while (setPage <= lastPage) {
 		%>
-		<a href="listboard1.jsp?pageno=<%=setPage%>">[<%=setPage%>]
+		<a href="listboard4.jsp?pageno=<%=setPage%>">[<%=setPage%>]
 		</a>
 		<%
 		setPage = setPage + 1;
 		}
 		if (lastPage > currentPage) {
 		%>
-		<a href="listboard1.jsp?pageno=<%=currentPage + 1%>">[다음]</a>
+		<a href="listboard4.jsp?pageno=<%=currentPage + 1%>">[다음]</a>
 		<%
 		}
 		}
 		%>
-	
+	</center>
 </body>
 </html>

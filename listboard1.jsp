@@ -49,10 +49,10 @@ a:hover {
 		<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
 			<tr>
 				<td bgcolor=282828 align=center>
-				<font size=5><a href=listboard1.jsp>게임1</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
-				<font size=5><a href=listboard2.jsp>게임2</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
-				<font size=5><a href=listboard3.jsp>게임3</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
-				<font size=5><a href=listboard4.jsp>게임4</a></font>
+				<font size=5><a href=listboard1.jsp>ㅁㅁ</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font size=5><a href=listboard2.jsp>ㄴㄴ</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font size=5><a href=listboard3.jsp>ㅇㅇ</a></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font size=5><a href=listboard4.jsp>ㄹㄹ</a></font>
 				</td>
 			</tr>
 		</TABLE>
@@ -106,7 +106,17 @@ a:hover {
 				<TD><hr size='1' noshade></TD>
 			</TR>
 		</TABLE>
-
+		<TABLE bgcolor='282828'  border=0 width=600 cellpadding=5 cellspacing=0>
+			<tr>
+				<td align=left></td>
+				<TD align='right'><a href='write1.jsp'>[등록] &nbsp; </a></TD>
+			</TR>
+		</TABLE>
+		<TABLE bgcolor='282828'  border='0' width='600' cellpadding='0' cellspacing='0'>
+			<TR>
+				<TD><hr size='1' noshade></TD>
+			</TR>
+		</TABLE>
 		<TABLE bgcolor='282828'  border='0' cellspacing=1 cellpadding=2 width='600'>
 
 			<TR bgcolor='282828'>
@@ -163,14 +173,7 @@ a:hover {
 				<TD><hr size='1' noshade></TD>
 			</TR>
 		</TABLE>
-		<TABLE bgcolor='282828'  border=0 width=600 cellpadding=5 cellspacing=0>
-			<tr>
-				<td align=left></td>
-			
-			
-				<TD align='right'><a href='write1.jsp'>[등록] &nbsp; </a></TD>
-			</TR>
-		</TABLE>
+		
 		<%
 		rs.close();
 		stmt.close();

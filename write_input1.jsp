@@ -14,7 +14,7 @@ String url 		= "jdbc:mysql://127.0.0.1:3306/zxc";
 Class.forName(driver);
 Connection conn = DriverManager.getConnection(url,"root","1234");
 
-PreparedStatement pstmt2 = null;
+PreparedStatement pstmt1, pstmt2 = null;
 
 String sessionId = (String)session.getAttribute("id");
 
