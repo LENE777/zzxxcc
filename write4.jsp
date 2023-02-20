@@ -100,7 +100,7 @@
 				</TR>
 			</table>
 
-			<TABLE>
+			<TABLE bgcolor='282828' border='0' width='600' cellpadding='5' cellspacing='0'>
 				<TR>
 					<TD width='100' align='center'><input Type='Reset'
 						Value='다시 작성'></TD>
