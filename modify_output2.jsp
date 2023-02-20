@@ -23,7 +23,7 @@ indate = indate + Integer.toString(dateIn.get(Calendar.MONTH)+1) + "-";
 indate = indate + Integer.toString(dateIn.get(Calendar.DATE)) + " ";
 indate = indate + Integer.toString(dateIn.get(Calendar.HOUR_OF_DAY)) + ":";
 indate = indate + Integer.toString(dateIn.get(Calendar.MINUTE)) + ":";
-indate = indate + Integer.toString(dateIn.get(Calendar.SECOND));
+
 	
 pstmt = conn.prepareStatement("update gm2 set id=?, pw=?, title=?, content=?, date=? where no=?");
 pstmt.setString(1, (String)session.getAttribute("id"));

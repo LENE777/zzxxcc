@@ -49,7 +49,7 @@ a:hover {
 <BODY>
 
 	<center>
-		<font size='3'><b> 로 그 인 </b></font>
+		<font size='5'><b> 로 그 인 </b></font>
 
 		<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
 			<TR>

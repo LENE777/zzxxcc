@@ -42,7 +42,7 @@ idsearch.submit();
 		<font color=ffffff size='2'>이 름</font>
 	</TD>
 	<TD >
-		<input type='text' maxLength='10' size='10' name='name'>
+		<input type='text' maxLength='10' size='20' name='name'>
 	</TD>
 </TR>
 <TR>
@@ -54,13 +54,13 @@ idsearch.submit();
 	</TD>
 </TR>
 </TABLE>
-<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
+<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
 	<TR>
 		<TD><hr size='1' noshade>
 		</TD>
  	</TR>
 </TABLE>
-<TABLE bgcolor='282828'>
+<TABLE>
 <TR>
 	<TD colspan='2' align='center'>
 		<input type='button' onclick="location.href='member.jsp'" value='돌아가기'>

@@ -19,7 +19,8 @@ PreparedStatement pstmt1, pstmt2 = null;
 String sessionId = (String)session.getAttribute("id");
 
 Calendar dateIn = Calendar.getInstance();
-String indate = Integer.toString(dateIn.get(Calendar.MONTH)+1) + "-";
+String indate = Integer.toString(dateIn.get(Calendar.YEAR)) + "-";
+indate = indate + Integer.toString(dateIn.get(Calendar.MONTH)+1) + "-";
 indate = indate + Integer.toString(dateIn.get(Calendar.DATE)) + " ";
 indate = indate + Integer.toString(dateIn.get(Calendar.HOUR_OF_DAY)) + ":";
 indate = indate + Integer.toString(dateIn.get(Calendar.MINUTE));

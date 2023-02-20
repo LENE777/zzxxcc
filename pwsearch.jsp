@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>아이디 찾기</title>
+<title>비밀번호 찾기</title>
 <SCRIPT LANGUAGE="JavaScript">
 function Check() 
 {
@@ -26,7 +26,7 @@ pwsearch.submit();
 </head>
 <body>
 <center><font size='3'><b> 비밀번호 찾기 </b></font>  
-<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
+<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
 	<TR>
 		<TD><hr size='1' noshade>
 		</TD>
@@ -38,28 +38,28 @@ pwsearch.submit();
 <TABLE bgcolor='282828' border='0' cellSpacing=0 cellPadding=5 align=center>
 <TR>
 	<TD align='center'>
-		<font size='2'>아 이 디</font>
+		<font color='ffffff' size='2'>아 이 디</font>
 	</TD>
 	<TD>
-		<input type='text' maxLength='10' size='10' name='id'>
+		<input type='text' maxLength='10' size='20' name='id'>
 	</TD>
 </TR>
 <TR>
 	<TD align='center'>
-		<font size='2'>이 름</font>
+		<font color='ffffff' size='2'>이 름</font>
 	</TD>
 	<TD>
-		<input type='text' maxLength='10' size='10' name='name'>
+		<input type='text' maxLength='10' size='20' name='name'>
 	</TD>
 </TR>
 </TABLE>
-<TABLE bgcolor='282828' border='0' width='600' cellpadding='0' cellspacing='0'>
+<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
 	<TR>
 		<TD><hr size='1' noshade>
 		</TD>
  	</TR>
 </TABLE>
-<TABLE bgcolor='282828'>
+<TABLE>
 <TR>
 	<TD colspan='2' align='center'>
 		<input type='button' onclick="location.href='member.jsp'" value='돌아가기'>

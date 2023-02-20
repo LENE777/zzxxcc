@@ -5,7 +5,13 @@
 <!DOCTYPE html>
 <head>
 <title> 게시판 </title>
-
+<style type='text/css'>
+<!--
+	a:link		{font-family:"";color:white;text-decoration:none;}
+	a:visited	{font-family:"";color:white;text-decoration:none;}
+	a:hover		{font-family:"";color:white;text-decoration:underline;}
+-->
+</style>
 <SCRIPT language="JavaScript">
 function Check()
 {
@@ -92,7 +98,7 @@ String content = rs.getString("content").trim();
 			<font color='ffffff' size='2'><center><b>비밀번호</b></center></font>
 		</td>
 		<td>
-			<p><input type='password' size='12' name='pw'> * 필수 </p>
+			<p><input type='password' size='12' name='pw'><font color='ffffff' size='2'> * 필수 </font></p>
 		</td>
 	</tr>
 	

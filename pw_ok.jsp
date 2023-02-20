@@ -40,7 +40,7 @@ if (id == "" || name == "") {
 %>
 <TR>
 	<TD align='center'>
-	<font size=2>ID와 이름을 입력하세요.</font>
+	<font color='ffffff' size=2>ID와 이름을 입력하세요.</font>
 	</TD>
 </TR>
 <TR>
@@ -71,7 +71,7 @@ if (id == "" || name == "") {
 %>
 <TR>
 	<TD align="center">
-	<font size='2'>회원이 아닙니다.</font>
+	<font color='ffffff' size='2'>회원이 아닙니다.</font>
 	</TD>
 </TR>
 <TR>
@@ -86,7 +86,7 @@ if (id == "" || name == "") {
 
 <TR>
 	<TD align='center'>
-	<font size=2>아이디가 일치하지 않습니다.</font>
+	<font color='ffffff' size=2>아이디가 일치하지 않습니다.</font>
 	</TD>
 </TR>
 <TR>

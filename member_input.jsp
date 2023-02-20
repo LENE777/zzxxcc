@@ -34,6 +34,21 @@ if (member_input.name.value.length < 1){
 	member_input.name.focus();
 	return false;
 	}
+if (member_input.phone.value.length < 1){
+	alert("전화번호를 입력하세요.");
+	member_input.phone.focus();
+	return false;
+	}
+if (member_input.email.value.length < 1){
+	alert("Email을 입력하세요.");
+	member_input.email.focus();
+	return false;
+	}
+if (member_input.addr.value.length < 1){
+	alert("주소를 입력하세요.");
+	member_input.addr.focus();
+	return false;
+	}
 member_input.submit();
 }
 function Check_id() 
