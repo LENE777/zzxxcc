@@ -34,10 +34,8 @@ String no = request.getParameter("no");
 
 <table bgcolor='282828' border='0' width='300' align='center'>
 	<tr>
-		<td align='right'>
+		<td align='centera'>
 			<font color='ffffff' size='2'><b>비밀번호</b></font>
-		</td>
-		<td align='center'>
 			<input type='password' name='pw' size=20 maxlength=20>
 			<input type='submit' value=' 확 인 ' >
 		</td>
