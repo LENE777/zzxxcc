@@ -5,7 +5,13 @@
 <!DOCTYPE html>
 <head>
 <title> 게시판 </title>
-
+<style type='text/css'>
+<!--
+	a:link		{font-family:"";color:white;text-decoration:none;}
+	a:visited	{font-family:"";color:white;text-decoration:none;}
+	a:hover		{font-family:"";color:white;text-decoration:underline;}
+-->
+</style>
 <SCRIPT language="JavaScript">
 function Check()
 {

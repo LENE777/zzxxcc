@@ -45,7 +45,7 @@ a:hover {
 				<font size=3><a href='logout.jsp'>로그아웃</a></font>
 				</td>
 		</table>
-	<TABLE border='0' width='600' cellpadding='5' cellspacing='10'>
+	<TABLE border='0' width='600' cellpadding='5' cellspacing='0'>
 		<tr>
 			<td bgcolor=282828 align=center>
 				<font size=5><a href=listboard1.jsp>ㅁㅁ</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -55,8 +55,13 @@ a:hover {
 			</td>
 		</tr>
 	</TABLE>
-	<br>
-	<img src="img/5091110.jpg" width='800' height='600'>
+	<table bgcolor='282828' width='600' height='500' cellpadding='10' cellspacing='0'>
+	<tr>
+	<td align=center>
+	<img src="img/5091110.jpg" width='580' height='450'>
+	</td>
+	</tr>
+	</table>
 </center>
 
 </body>

@@ -32,7 +32,7 @@ String no = request.getParameter("no");
 <form action='delete_input2.jsp' method='post'>
 <input type='hidden' name='no' value='<%=no %>'>
 
-<table bgcolor='282828' border='0' width='300' align='center'>
+<table bgcolor='282828' border='0' width='0' align='center'>
 	<tr>
 		<td align='centera'>
 			<font color='ffffff' size='2'><b>비밀번호</b></font>
